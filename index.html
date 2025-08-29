@@ -11,24 +11,24 @@
 
 </head>
 <!-- Navbar section -->
-<header class=" p-2 md:p-4 bg-white ">
-    <div class="flex justify-between items-center">
-        <nav class="flex items-center gap-2 md:mx-7">
+<header class=" p-2 md:p-4 bg-white  ">
+    <div class="flex flex-col md:flex-row justify-between items-center mt-1 ">
+        <nav class="flex  items-center gap-1 mb-4 md:mb-0 md:mx-7 ">
             <img class="md:h-[70px] md:w-[70px] h-16 w-16" src="images/logo.png" alt="">
-            <h3 class="text-xl font-bold  md:text-3xl  text-green-700">Emergency<br>Service</h3>
+            <h3 class="text-2xl font-bold  md:text-3xl  text-green-700">Emergency<br>Service</h3>
         </nav>
         <div class="flex gap-2 ">
-            <div class="flex justify-center items-center bg-sky-100  p-2 w-16 rounded-2xl md:w-[123px] md:rounded-3xl">
+            <div class="flex  justify-center items-center bg-sky-100  p-2  w-16 rounded-2xl md:w-[123px] md:rounded-3xl">
                 <p id="heartCounter" class="font-bold mr-1 text-lg md:text-xl md:mr-3 ">0</p>
-                <img class="h-[30px] w-[30px]" src="images/heart.png" alt="">
+                <img class="h-5 w-5 md:h-[30px] md:w-[30px]" src="images/heart.png" alt="">
             </div>
-            <div class="flex justify-center items-center bg-sky-100 rounded-2xl md:rounded-3xl p-2 w-20 md:w-[123px]">
+            <div class="flex justify-center items-center bg-sky-100 rounded-2xl md:rounded-3xl p-2 w-16 md:w-[123px]">
                 <span id="coinCount" class="font-bold mr-1 text-lg md:text-xl md:mr-3 ">100</span>
-                <img class="h-[30px] w-[30px]" src="images/coin.png" alt="">
+                <img class=" h-5 w-5 md:h-[30px] md:w-[30px]" src="images/coin.png" alt="">
             </div class="flex justify-center items-center">
 
             <button
-                class="bg-green-700 rounded-2xl p-1 w-20 mr-1  md:rounded-3xl md:p-2 md:w-[123px] text-white font-bold text-xl md:mr-3"><span
+                class="bg-green-700 rounded-2xl p-1 w-[80px] mr-1  md:rounded-3xl md:p-2 md:w-[123px] text-white font-bold text-lg md:mr-3"><span
                     id="copyCounter">0</span>
                 Copy</button>
         </div>
