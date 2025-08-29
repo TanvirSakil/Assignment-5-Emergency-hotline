@@ -14,7 +14,6 @@ for (let i = 0; i < len; i++) {
 }
 
 
-
 // call button function-----
 
 let coins = 100;
@@ -75,7 +74,26 @@ clearHistoryBtn.addEventListener("click", function () {
 });
 
 
+// -----copy button function
+
+let copyCount = 0;
+const copyButtons = document.getElementsByClassName('copyBtn');
+
+for (const copyButton of copyButtons) {
+  copyButton.addEventListener('click', function () {
+
+    const card = this.closest('.card');
+
+    const serviceNum = card.getElementsByClassName('serviceNumber')[0].innerText;
+    alert('Number copied: ' + serviceNum);
+
+    navigator.clipboard.writeText(serviceNum);
+
+    copyCount++;
+    document.getElementById('copyCounter').innerText = copyCount;
 
 
+  })
 
+}
 
